@@ -1,0 +1,837 @@
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: black;
+}
+
+.all-btn {
+    width: 220px;
+    height: 55px;
+    background-color: #BDAE82;
+    border: none;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    padding:0 20px;
+    z-index: 10000;
+    left: 0;
+}
+.myNavbar{
+    backdrop-filter: blur(8px);
+    background-color: #BDAE82;
+    box-shadow: 0 5px 10px #BDAE82;
+}
+header {
+    height: 910px;
+    background-image: url("../images/bg.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+header .navbar-collapse {
+    justify-content: flex-end;
+    margin: 20px auto;
+}
+
+header .language {
+    display: flex;
+}
+header .mobile-language{
+    display: none;
+}
+
+header .nav-link {
+    color: white;
+    font-size: 20px;
+    transition: 0.4s;
+    padding: 0 15px !important;
+}
+
+header .nav-link:hover, header .nav-link:focus {
+    color: #BDAE82;
+}
+
+header .language .nav-link:first-child {
+    position: relative;
+}
+
+header .language .nav-link:first-child::after {
+    content: '/';
+    position: absolute;
+    right: -3px;
+}
+
+header .language .nav-link:first-child:hover::after,
+header .language .nav-link:first-child:focus::after {
+    content: '/';
+    color: white;
+}
+
+header .row {
+    padding-top: 185px;
+    padding-left: 80px;
+}
+
+header .title {
+    font-size: 60px;
+    font-family: 'Merriweather', serif;
+    color: white;
+    line-height: 120px;
+}
+
+header .text {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 40px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.skills-section {
+    margin: 100px 0 110px 0;
+}
+
+.section-title-line {
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.section-title-line hr {
+    background-color: #BDAE82;
+    width: 700px;
+    height: 3px;
+}
+
+.section-title-line .title {
+    font-size: 40px;
+    line-height: 80px;
+    background-color: black;
+    color: #BDAE82;
+    width: 152px;
+    left: calc(50% - 76px);
+    position: absolute;
+    text-align: center;
+}
+
+.portfolio-section .section-title-line .title {
+    width: 222px;
+    left: calc(50% - 111px);
+}
+
+.carousel-section .section-title-line .title {
+    width: 154px;
+    left: calc(50% - 77px);
+}
+
+.skills-section .skills-row {
+    padding: 0 40px;
+}
+
+.skills-section .card {
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    color: white;
+    text-align: center;
+}
+
+.skills-row .card-title {
+    font-size: 20px;
+    line-height: 40px;
+    margin: 50px 0 20px 0;
+}
+
+.skills-row .card-text {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+.portfolio-section .nav .nav-item:first-child {
+    margin-left: 0;
+}
+
+.portfolio-section .nav .nav-item {
+    margin-left: 5px;
+}
+
+.portfolio-section .nav .nav-link {
+    color: #BDAE82;
+    font-size: 20px;
+    padding: 0;
+    height: 55px;
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #BDAE82;
+}
+
+.portfolio-section .tab-row {
+    margin-bottom: 60px;
+}
+
+.portfolio-section .tab-row .active {
+    color: black;
+    background-color: #BDAE82;
+}
+
+.carousel-section{
+    margin: 100px 0 100px 0;
+}
+
+.carousel-inner .carousel-item{
+    height: 700px;
+}
+.carousel-inner .carousel-item img{
+    height: 100%;
+    width: 100%;
+}
+/*
+.carousel-indicators button{
+    width: 10px!important;
+    height: 10px !important;
+    border-radius: 50%;
+}*/
+.price-section .card{
+    background-color: transparent;
+    border: 2px solid #BDAE82;
+    border-radius: 0;
+    text-align: center;
+    padding: 43px 0;
+}
+.price-section ul{
+    padding-left: 0;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.price-section li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 36px;
+    color: white;
+}
+.price-section .card-title{
+    font-size: 28px;
+    line-height: 56px;
+    color: white;
+    margin-bottom: 20px;
+    font-family: 'Merriweather', serif;
+}
+.price-section .card-text{
+    font-size: 24px;
+    line-height: 48px;
+    color: #BDAE82;
+    font-family: 'Merriweather', serif;
+}
+.price-section button{
+    margin: 0 auto;
+}
+
+.form-section{
+    height: 700px;
+    background-image: url("../images/form.jpg");
+    margin: 100px 0 50px 0;
+    padding-top: 60px;
+}
+.form-section .title {
+    font-size: 40px;
+    line-height: 80px;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 40px;
+    color: #BDAE82;
+}
+.form-section input, .form-section textarea{
+    height: 50px;
+    border: 1px solid #BDAE82;
+    background-color: transparent;
+    font-size: 20px;
+    color: #BDAE82;
+    padding-left: 20px;
+    outline: none;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.form-section textarea{
+    min-height: 100px;
+    padding-top: 10px;
+}
+.form-section ::placeholder{
+    color: #BDAE82;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    align-items: center;
+}
+footer .left-side{
+    display: flex;
+
+}
+footer .left-side div, footer .left-side a{
+    font-size: 20px;
+    line-height: 40px;
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+footer .center{
+    font-size: 20px;
+    color: white;
+}
+footer .right-side a{
+    margin-right: 30px;
+    text-decoration: none;
+}
+footer .right-side a:last-child{
+    margin-right: 20px;
+}
+
+@media (min-width: 1440px) {
+    .container-fluid{
+        width: 1140px;
+    }
+    .navbar{
+        max-width:1140px ;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+
+    }
+}
+
+@media (max-width: 576px) {
+    header{
+        height: 500px;
+        background-position: 25% center;
+        background-size: cover;
+    }
+    header .navbar-nav{
+        align-items: center;
+        backdrop-filter: blur(8px);
+        padding: 10px 0;
+    }
+
+    header .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    header .navbar-nav .language{
+        display: none;
+    }
+    header .mobile-language{
+        display: flex;
+    }
+
+    header .row {
+        padding-top: 100px;
+        padding-left: 12px;
+    }
+
+    header .title {
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+    header .text {
+        margin-top: 20px;
+        line-height: 24px;
+        width: 80%;
+        margin-bottom: 60px;
+    }
+
+    .section-title-line hr {
+        width: 364px;
+    }
+    .section-title-line{
+        justify-content: center;
+    }
+    .section-title-line .title {
+        font-size: 32px;
+        line-height: 40px;
+        width: 130px;
+        left: calc(50% - 65px);
+    }
+    .skills-row .card-title {
+        margin: 30px 0 20px 0;
+    }
+    .skills-row .card {
+        margin-bottom: 76px;
+    }
+    .skills-row .col-xl-3:last-child .card {
+        margin-bottom: 0
+    }
+    .portfolio-section .section-title-line .title {
+        width: 186px;
+        left: calc(50% - 93px);
+    }
+    .portfolio-section .nav .nav-item:first-child{
+        margin-left: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        margin-bottom: 5px;
+    }
+    .tab-pane .col-xl-4{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .tab-pane .col-xl-4:last-child{
+        margin-bottom: 0;
+    }
+    #winter .row:last-child{
+        margin-top: 0 !important;
+    }
+    .carousel-inner .carousel-item {
+        height: 300px;
+    }
+    .price-section .section-title-line .title{
+        width: 122px;
+        left: calc(50% - 61px);
+    }
+    .price-section .col-xl-4 .card{
+        margin-bottom: 50px;
+    }
+    .price-section .col-xl-4:last-child .card{
+        margin-bottom: 0;
+    }
+    .form-section .form-element{
+        text-align: center;
+    }
+    .form-element input, .form-element textarea{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .form-section{
+        background-position-x:30% ;
+        margin-bottom: 28px;
+    }
+    footer{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    footer .left-side div:first-child{
+        margin-left: 0;
+    }
+    footer .left-side{
+        margin-bottom: 16px;
+    }
+    footer .right-side a:last-child{
+        margin-right: 0;
+    }
+    footer .right-side{
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 768px){
+    header{
+        height: 500px;
+        background-position: 0 center;
+        background-size: cover;
+    }
+    header .navbar-nav{
+        align-items: center;
+        backdrop-filter: blur(8px);
+        padding: 10px 0;
+    }
+
+    header .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    header .navbar-nav .language{
+        display: none;
+    }
+    header .mobile-language{
+        display: flex;
+    }
+
+    header .row {
+        padding-top: 100px;
+        padding-left: 12px;
+    }
+
+    header .title {
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+    header .text {
+        margin-top: 20px;
+        line-height: 24px;
+        width: 60%;
+        margin-bottom: 60px;
+    }
+
+    .section-title-line hr {
+        width: 364px;
+    }
+    .section-title-line{
+        justify-content: center;
+    }
+    .section-title-line .title {
+        font-size: 32px;
+        line-height: 40px;
+        width: 130px;
+        left: calc(50% - 65px);
+    }
+    .skills-row .card-title {
+        margin: 30px 0 20px 0;
+    }
+    .skills-row .card {
+        margin-bottom: 76px;
+    }
+    .skills-row .col-xl-3:last-child .card {
+        margin-bottom: 0
+    }
+    .portfolio-section .section-title-line .title {
+        width: 186px;
+        left: calc(50% - 93px);
+    }
+    .portfolio-section .nav .nav-item:first-child{
+        margin-left: 0;
+    }
+    .portfolio-section .nav .nav-item:first-child,
+    .portfolio-section .nav .nav-item:nth-child(3){
+        justify-content: flex-end;
+        display: flex;
+        padding-right: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        margin-bottom: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        width: 50%;
+        margin-left: 0;
+    }
+
+
+    .tab-pane .col-xl-4{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .tab-pane .col-xl-4:last-child{
+        margin-bottom: 0;
+    }
+    #winter .row:last-child{
+        margin-top: 0 !important;
+    }
+    .carousel-inner .carousel-item {
+        height: 420px;
+    }
+    .price-section .section-title-line .title{
+        width: 122px;
+        left: calc(50% - 61px);
+    }
+    .price-section .col-xl-4 .card{
+        margin-bottom: 50px;
+    }
+    .price-section .col-xl-4:last-child .card{
+        margin-bottom: 0;
+    }
+    .form-section .form-element{
+        text-align: center;
+    }
+    .form-element input, .form-element textarea{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .form-section{
+        background-position-x:37% ;
+        margin-bottom: 28px;
+    }
+    footer{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    footer .left-side div:first-child{
+        margin-left: 0;
+    }
+    footer .left-side{
+        margin-bottom: 16px;
+    }
+    footer .right-side a:last-child{
+        margin-right: 0;
+    }
+    footer .right-side{
+        margin-top: 32px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px){
+    header{
+        height: 500px;
+        background-position: 0 center;
+        background-size: cover;
+    }
+    header .navbar-nav{
+        align-items: center;
+        backdrop-filter: blur(8px);
+        padding: 10px 0;
+    }
+
+    header .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    header .navbar-nav .language{
+        display: none;
+    }
+    header .mobile-language{
+        display: flex;
+    }
+
+    header .row {
+        padding-top: 100px;
+        padding-left: 12px;
+    }
+
+    header .title {
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+    header .text {
+        margin-top: 20px;
+        line-height: 24px;
+        width: 60%;
+        margin-bottom: 60px;
+    }
+
+    .section-title-line hr {
+        width: 364px;
+    }
+    .section-title-line{
+        justify-content: center;
+    }
+    .section-title-line .title {
+        font-size: 32px;
+        line-height: 40px;
+        width: 130px;
+        left: calc(50% - 65px);
+    }
+    .skills-row .card-title {
+        margin: 30px 0 20px 0;
+    }
+    .skills-row .card {
+        margin-bottom: 76px;
+    }
+    .skills-row .col-xl-3:last-child .card {
+        margin-bottom: 0
+    }
+    .portfolio-section .section-title-line .title {
+        width: 186px;
+        left: calc(50% - 93px);
+    }
+    .portfolio-section .nav .nav-item:first-child{
+        margin-left: 0;
+    }
+    .portfolio-section .nav .nav-item:first-child,
+    .portfolio-section .nav .nav-item:nth-child(3){
+        justify-content: flex-end;
+        display: flex;
+        padding-right: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        margin-bottom: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        width: 50%;
+        margin-left: 0;
+    }
+
+
+    .tab-pane .col-xl-4{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .tab-pane .col-xl-4:last-child{
+        margin-bottom: 0;
+    }
+    #winter .row:last-child{
+        margin-top: 0 !important;
+    }
+    .carousel-inner .carousel-item {
+        height: 420px;
+    }
+    .price-section .section-title-line .title{
+        width: 122px;
+        left: calc(50% - 61px);
+    }
+    .price-section .col-xl-4 .card{
+        margin-bottom: 50px;
+    }
+    .price-section .col-xl-4:last-child .card{
+        margin-bottom: 0;
+    }
+    .form-section .form-element{
+        text-align: center;
+    }
+    .form-element input, .form-element textarea{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .form-section{
+        background-position-x:37% ;
+        margin-bottom: 28px;
+    }
+    footer{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    footer .left-side div:first-child{
+        margin-left: 0;
+    }
+    footer .left-side{
+        margin-bottom: 16px;
+    }
+    footer .right-side a:last-child{
+        margin-right: 0;
+    }
+    footer .right-side{
+        margin-top: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 992px) and (max-width: 1200px){
+    header{
+        height: 500px;
+        background-position: 0 center;
+        background-size: cover;
+    }
+    header .navbar-nav{
+        align-items: center;
+        backdrop-filter: blur(8px);
+        padding: 10px 0;
+    }
+
+    header .navbar-toggler:focus{
+        box-shadow: none !important;
+    }
+    header .navbar-nav .language{
+        display: none;
+    }
+    header .mobile-language{
+        display: flex;
+    }
+
+    header .row {
+        padding-top: 100px;
+        padding-left: 12px;
+    }
+
+    header .title {
+        font-size: 32px;
+        line-height: 64px;
+    }
+
+    header .text {
+        margin-top: 20px;
+        line-height: 24px;
+        width: 47%;
+        margin-bottom: 60px;
+    }
+
+    .section-title-line hr {
+        width:700px;
+    }
+    .section-title-line{
+        justify-content: center;
+    }
+    .section-title-line .title {
+        font-size: 32px;
+        line-height: 40px;
+        width: 130px;
+        left: calc(50% - 65px);
+    }
+    .skills-row .card-title {
+        margin: 30px 0 20px 0;
+    }
+    .skills-row .card {
+        margin-bottom: 76px;
+    }
+    .skills-row .col-xl-3:last-child .card {
+        margin-bottom: 0
+    }
+    .portfolio-section .section-title-line .title {
+        width: 186px;
+        left: calc(50% - 93px);
+    }
+    .portfolio-section .nav .nav-item:first-child{
+        margin-left: 0;
+    }
+    .portfolio-section .nav .nav-item:first-child,
+    .portfolio-section .nav .nav-item:nth-child(3){
+        justify-content: flex-end;
+        display: flex;
+        padding-right: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        margin-bottom: 5px;
+    }
+    .portfolio-section .nav .nav-item{
+        width: 50%;
+        margin-left: 0;
+    }
+
+
+    .tab-pane .col-xl-4{
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .tab-pane .col-xl-4:last-child{
+        margin-bottom: 0;
+    }
+    #winter .row:last-child{
+        margin-top: 0 !important;
+    }
+    .carousel-inner .carousel-item {
+        height: 420px;
+    }
+    .price-section .section-title-line .title{
+        width: 122px;
+        left: calc(50% - 61px);
+    }
+    .price-section .col-xl-4 .card{
+        margin-bottom: 50px;
+    }
+    .price-section .col-xl-4:last-child .card{
+        margin-bottom: 0;
+    }
+    .form-section .form-element{
+        text-align: center;
+    }
+    .form-element input, .form-element textarea{
+        background-color: rgba(0,0,0,0.5);
+    }
+    .form-section{
+        background-position-x:37% ;
+        margin-bottom: 28px;
+    }
+    footer{
+        margin-bottom: 40px;
+        display: flex;
+    }
+    footer .left-side div:first-child{
+        margin-left: 0;
+    }
+    footer .left-side{
+        margin-bottom: 0;
+    }
+    footer .right-side a:last-child{
+        margin-right: 0;
+    }
+    footer .right-side{
+        margin-top: 0;
+    }
+}
